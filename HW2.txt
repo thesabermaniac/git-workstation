@@ -18,3 +18,39 @@ nothing added to commit but untracked files present (use "git add" to track)
 Shalom@DESKTOP-UKLBBNN MINGW64 ~/Documents/School/ComputerMethodology/Homeworks/hw2 (master)
 $ git checkout -b change_doc
 Switched to a new branch 'change_doc'
+
+Shalom@DESKTOP-UKLBBNN MINGW64 ~/Documents/School/ComputerMethodology/Homeworks/hw2 (change_doc)
+$ git status
+On branch change_doc
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        HW2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Shalom@DESKTOP-UKLBBNN MINGW64 ~/Documents/School/ComputerMethodology/Homeworks/hw2 (change_doc)
+$ git add HW2.txt
+
+Shalom@DESKTOP-UKLBBNN MINGW64 ~/Documents/School/ComputerMethodology/Homeworks/hw2 (change_doc)
+$ git commit -m "Added git commands to text doc"
+[change_doc (root-commit) 53f3aa9] Added git commands to text doc
+ 1 file changed, 20 insertions(+)
+ create mode 100644 HW2.txt
+
+Shalom@DESKTOP-UKLBBNN MINGW64 ~/Documents/School/ComputerMethodology/Homeworks/hw2 (change_doc)
+$ git push --set-upstream https://github.com/thesabermaniac/git-workstation.git change_doc
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 543 bytes | 271.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/thesabermaniac/git-workstation.git
+ * [new branch]      change_doc -> change_doc
+Branch 'change_doc' set up to track remote branch 'change_doc' from 'https://github.com/thesabermaniac/git-workstation.git'.
+
+
